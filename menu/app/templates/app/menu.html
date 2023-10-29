@@ -1,0 +1,16 @@
+{% load menu %}
+<header>
+    <div class="elem_name"> <a href="{{ menu_elem.url }}">{{ menu_elem.name }}</a></div>
+    {% if menu_elem.subelems %}
+    <details {% if menu_elem.id in expanded_elems %} open {% endif %}>
+        <summary>
+
+        </summary>
+        {% for item in menu_elem.subelems %}
+        <div class="menu_elem">
+            {% draw_menu_subelems item.id %}
+        </div>
+        {% endfor %}
+    </details>
+    {% endif %}
+</header>

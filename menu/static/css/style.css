@@ -1,0 +1,28 @@
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #fde3e8;
+    max-height: 50px;
+    list-style: none;
+
+}
+li {
+    display: block
+    position: relative;
+    margin-right: 90px;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background: #ebccd2;
+    color: #f06782;
+    font-size: 1.7em;
+}
+
+.menu_elem {
+    margin-top: 25px;
+
+}

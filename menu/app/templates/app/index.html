@@ -1,0 +1,24 @@
+{% load static %}
+{% load menu %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<header>
+
+        <ul>
+            <li>{% draw_menu 'Films' %}</li>
+            <li>{% draw_menu 'Serials' %}</li>
+            <li>{% draw_menu 'About' %}</li>
+        </ul>
+
+</header>
+
+    <body>
+    </body>
+
+</html>
